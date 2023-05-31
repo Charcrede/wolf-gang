@@ -1,0 +1,161 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #444 url(img/bg_body.svg);
+  padding: 2rem;
+  font-family: fontawesome, sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  border-top: none;
+  border-left: none;
+  padding: 1rem;
+  font-family: BodgeSans, sans-serif;
+  font-size: 4rem;
+  text-align: left;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  border-top: 4px solid #333;
+  border-left: 4px solid #333;
+  padding: 1rem;
+  font-family: BodgeSans, sans-serif;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+h3 {
+  font-family: BodgeSans, sans-serif;
+}
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+img, video {
+  max-width: 100%;
+}
+
+.les-motos {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #444;
+}
+.les-motos h3 {
+  width: 100%;
+  padding-block: 1rem;
+  border-bottom: 4px solid #ff9d00;
+  color: #ff9d00;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.les-motos a {
+  color: #fff;
+  padding: 1rem;
+  display: block;
+  background-color: #ff9d00;
+  text-decoration: none;
+}
+
+span {
+  color: #ff9d00;
+}
+
+/*==========================================================
+                        HEADER
+==========================================================*/
+header {
+  background-image: conic-gradient(from 60deg, #333 180deg, #fff 180deg, #fff 60deg);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+header div {
+  margin-block: 3rem;
+}
+header div img {
+  width: 100%;
+}
+header ul {
+  list-style: none;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 5rem;
+  padding: 0;
+}
+header ul a {
+  text-decoration: none;
+  color: #fff;
+  font-family: BodgeSans;
+  font-size: 2.5rem;
+  line-height: 3;
+}
+
+/*==========================================================
+                        MAIN
+==========================================================*/
+main {
+  text-align: center;
+}
+main .reseau svg {
+  display: block;
+  margin-block: 2rem;
+  margin-inline: auto;
+  border-radius: 30px;
+  font-size: 4rem;
+}
+
+/*==========================================================
+                            FOOTER
+===========================================================*/
+footer {
+  text-align: center;
+  padding: 5rem;
+  box-shadow: #222 0px 0px 20px;
+  margin-top: 5rem;
+}
+footer h2 {
+  text-transform: uppercase;
+  border-top: none;
+  border-left: none;
+  padding: 1rem;
+  font-family: BodgeSans, sans-serif;
+  font-size: 2.5rem;
+  text-align: left;
+  text-align: center;
+}
+footer nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+footer nav ul li {
+  display: inline-block;
+  flex-basis: calc(50% - 2rem);
+  list-style: none;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=wolf-gang.css.map */

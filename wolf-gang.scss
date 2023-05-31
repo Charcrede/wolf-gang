@@ -1,0 +1,151 @@
+@mixin les-titres($border: 4px solid #333, $fz:2.5rem){
+    text-transform: uppercase;
+    border-top:$border;
+    border-left: $border;
+    padding: 1rem;
+    font-family:BodgeSans, sans-serif;
+    font-size: $fz;
+    text-align: left;
+}
+@mixin les-spans{
+    color:$color;
+}
+@mixin les-motos{
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #444;
+    h3{
+        width: 100%;
+        padding-block: 1rem;
+        border-bottom:4px solid $color;
+        color:$color;
+        text-transform: uppercase;
+        margin-top:0;
+    }
+    a{
+        color: #fff;
+        padding: 1rem;
+        display: block;
+        background-color:$color;
+        text-decoration: none;
+    }
+}
+$color:#ff9d00;
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#444 url(img/bg_body.svg);
+    padding: 2rem;
+    font-family:fontawesome, sans-serif;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+h1{
+    @include les-titres(none, 4rem);
+    text-align:center
+}
+h2{
+    @include les-titres();
+}
+h3{
+    font-family:BodgeSans, sans-serif;
+}
+.wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+img,video{
+    max-width: 100%;
+}
+.les-motos{
+    @include les-motos();
+}
+span{
+    @include les-spans();
+}
+/*==========================================================
+                        HEADER
+==========================================================*/
+header{
+    background-image: conic-gradient(from 60deg, #333 180deg, #fff 180deg, #fff 60deg);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content:space-around;
+    div{
+        margin-block: 3rem;
+        img{
+            width:  100%;
+        }
+    }
+    ul{
+        list-style: none;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        margin-top:5rem;
+        padding: 0;
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-family: BodgeSans;
+            font-size: 2.5rem;
+            line-height:3;
+        }
+    }
+ }
+ /*==========================================================
+                        MAIN
+==========================================================*/
+main{
+    text-align: center;
+    .reseau{
+        svg{
+            display: block;
+            margin-block: 2rem;
+            margin-inline:auto;
+            border-radius:30px;
+            font-size: 4rem;
+        }
+    }
+}
+ /*==========================================================
+                            FOOTER
+===========================================================*/
+footer{
+    text-align: center;
+    padding: 5rem;
+    box-shadow: #222 0px 0px 20px;
+    margin-top: 5rem;
+    h2{
+        @include les-titres(none);
+        text-align: center;
+    }
+    
+    nav{
+        ul{
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0;
+            padding: 0;
+            gap: 2rem;
+            li{
+                display: inline-block;
+                flex-basis:calc((100% / 2) - 2rem);
+                list-style: none;
+                text-align: center;
+            }
+        }
+    }
+    a{
+        color: #fff;
+    }
+}
